@@ -1,26 +1,40 @@
-import 'package:flutt er/meteraial.dart';
+import 'package:flutter/material.dart';
 
-class TextLearnView extends StatelessWidget {
+class TextLearn extends StateLessWidget
+  const TextLearnView({Key? key}): super(key:key);
+  final String name = 'ibrahim';
 
 @override
-Widget build(BuildContext context)
 {
-    return const SCaffold(
-        body: Center(
-            child: Text(
-                'Welcome '
-            ('Buy the best one'*10),
-            maxLines:2,
-            overflow: TextOverFlow.ellipsis,
-            textAlign: TextAlign.right,
-
-            style: TextStyle(wordSpacing: 2, letterSpacing: 2, fontSize:16,
-            fontWeight: fontWeight),
-            
-            
-            )),
-        );
+Widget build(BildContext context)
+{
+  return Scaffold(
+    body:Center(
+      child: Text(
+        ('Welcome'),
+        ('Buy the best one' * 10),
+        maxLines: 2,
+        overflow: textOverflow.ellipsis,
+        textAlign: TextAlign.right,
+        style: const TextStyle(
+          wordSpacing: 2,
+          decoration: TextDecoration.underline,
+          fontStyle: FontStyle.italic,
+        )
+      )
     )
-     const Text('Veli');
+  ) 
 }
 }
+
+class ProjectStyles{
+
+  static TextStyle welcomeStyle = const TextStyle(
+
+  ),
+
+}
+
+
+
+
